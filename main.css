@@ -1,0 +1,192 @@
+*{
+    /* Makes the width and height include padding and border */
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Input - Add - No Task To Show*/
+
+.todo-container{
+    width: 600px;
+    margin: 10px auto 0;
+    background-color: #f6f6f6;
+}
+/*Input - Add */
+.todo-container .add-task{
+    padding: 10px 18px;
+    background-color: #009688;
+    border-radius: 40px;
+    /* Allows the element to be moved using top, bottom, left, or right */
+    position: relative; 
+}
+
+/* Input: */
+.todo-container .add-task input{
+    /*It lets elements stay side-by-side on the same line while still allowing you to adjust their size.*/
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 40px;
+    /*Give it all the space, minus 15 pixels for the + button.*/
+    width: calc(100% - 5px);
+    color: white;
+    font-size: 20px;
+}
+
+.todo-container .add-task input:focus{
+    outline: none;
+}
+
+/* Add:*/
+.todo-container .add-task .plus{
+    /*It removes the element from the normal document flow and positions it relative to its nearest positioned ancestor.*/
+    position: absolute;
+    height: 43px;
+    width: 43px;
+    background-color: white;
+    right: 12px;
+    border-radius: 50%;
+    /*line-height sets the vertical height of a line to align text vertically.*/
+    line-height: 43px;
+    /*text-align: center; aligns the text to the horizontal middle of its container.*/
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+.todo-container .add-task .plus:hover{
+    transform: rotate(90deg) scale(1.1);
+}
+
+/* No Task To Show:*/
+.todo-container .task-content{
+    padding: 15px;
+}
+
+.todo-container .task-content .no-task-massage{
+    color: #777;
+    font-size: 15px;
+}
+
+/*Direct Son*/
+.todo-container .task-content > span{
+    display: block;
+    background-color: white;
+    padding: 10px;
+}
+
+.todo-container .task-content > span:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.todo-container .task-content .task-box .delete{
+    float: right;
+    background-color: #d8064c;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.todo-container .task-content .task-box .delete:hover{
+    background-color: #9e0b3c;
+}
+
+.todo-container .task-content .task-box.finished{
+    text-decoration: line-through;
+}
+/*Task Count And Task Completed */
+
+/* Task Stats: */
+.task-stats{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.task-stats .task-count{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.task-stats .task-completed{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    text-align: right;    
+}
+
+.task-stats .task-count span,
+.task-stats .task-completed span{
+    color:  #fff;
+    padding: 1px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.task-stats .task-count span{
+    background-color: #E91E63;
+}
+
+.task-stats .task-completed span{
+    background-color: #009688;
+}
+
+.my-button{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: #960334cc 5px solid;
+    background-color: #d8064c;
+}
+
+.my-button:hover{
+    background-color: #690627;
+}
+
+.all{
+    width: 600px;
+    margin: 10px auto;
+}
+
+
+.delete-all,
+.finished-all{
+    background-color: #E91E63;
+    color: white;
+    padding: 1px;
+    border-radius: 20px;
+    border: 5px #b60b44 solid;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.delete-all{
+    width: 130px;
+    float: left;
+    padding: 10px;
+}
+.finished-all{
+    width: 130px;
+    float: right;
+    padding: 10px;
+}
+
+.delete-all:hover,
+.finished-all:hover{
+    background-color: #8a0934;
+    transform: scale(1.1);
+    cursor: pointer;
+}

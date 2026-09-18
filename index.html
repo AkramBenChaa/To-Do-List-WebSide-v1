@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <!--Input - Add - No Task Massage -->
+    <div class="todo-container">
+        <!-- Input Add And -->
+        <div class="add-task">
+            <input type="text">
+            <span class="plus">+</span>
+        </div>
+        <!-- No Task Massage -->
+        <div class="task-content">
+            <span class="no-task-massage">No Task To Show</span>
+        </div>
+    </div>
+    <!-- Show: Task Count And Task Completed  -->
+    <div class="task-stats">
+        <!-- Task Count -->
+        <div class="task-count">
+            Task: <span>0</span>
+        </div>
+        <!-- Task Completed -->
+        <div class="task-completed">
+            Completed: <span>0</span>
+        </div>
+    </div>
+    <div class="all">
+        <span class="delete-all">Delete All</span>
+        <span class="finished-all">Finished All</span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
