@@ -1,56 +1,66 @@
-# 📝 Task Manager
+# Task Manager
 
-A simple and modern **Task Manager** built with **HTML, CSS, and JavaScript**.
+A responsive task-management web application built with **HTML, CSS, and JavaScript**.
 
-This project allows users to add, delete, complete, and manage tasks through an interactive interface.
+The project focuses on practical DOM manipulation, task management, browser storage, and interactive user feedback.
 
-## 🚀 Features
+## Features
 
-* Add new tasks
-* Prevent duplicate task names
-* Delete individual tasks
-* Delete all tasks
-* Mark individual tasks as completed
-* Mark/unmark all tasks
-* Display the total number of tasks
-* Display the number of completed tasks
-* Show a message when there are no tasks
-* Save tasks using `localStorage`
-* Restore saved tasks after refreshing the page
-* Interactive buttons and user feedback with SweetAlert
+- Add tasks
+- Prevent duplicate task names
+- Delete individual tasks
+- Delete all tasks
+- Mark tasks as completed
+- Mark or unmark all tasks
+- Display total and completed task counts
+- Show an empty-state message
+- Save tasks with `localStorage`
+- Restore tasks after refreshing the page
+- Interactive feedback with SweetAlert2
 
-## 🛠️ Technologies
+## Technologies
 
-* HTML5
-* CSS3
-* JavaScript
-* DOM Manipulation
-* Local Storage
-* SweetAlert2
+- HTML5
+- CSS3
+- JavaScript
+- DOM Manipulation
+- Local Storage
+- SweetAlert2
 
-## 📚 What I Practiced
+## What I Practiced
 
-Through this project, I practiced:
+- Dynamic DOM creation and updates
+- Event handling
+- Arrays and array methods
+- `localStorage`
+- JSON data handling
+- Application state management
+- Interactive UI development
 
-* Working with the DOM
-* Creating HTML elements using JavaScript
-* Handling user events
-* Using `querySelector()` and `querySelectorAll()`
-* Using arrays and array methods such as `push()`, `filter()`, and `some()`
-* Working with `localStorage`
-* Converting data with `JSON.stringify()` and `JSON.parse()`
-* Managing dynamic elements
-* Building interactive web interfaces
+## Project Structure
 
-## 🎯 Purpose
+```text
+To-Do-List-WebSide-v1/
+├── index.html
+├── main.css
+├── script.js
+└── ReadMe.md
+```
 
-The purpose of this project was to improve my practical JavaScript skills by building a real interactive application instead of only following tutorials.
+## Run the Project
 
-## 📌 Future Improvements
+Open `index.html` in a modern web browser.
 
-* Save completed task status in `localStorage`
-* Add task editing
-* Add task categories
-* Add search and filtering
-* Improve responsive design
-* Add task dates and priorities
+No build tools are required.
+
+## Future Improvements
+
+- Task editing
+- Search and filtering
+- Task categories
+- Due dates and priorities
+- Further responsive-design improvements
+
+## Author
+
+**Akram Ben Chaa**
